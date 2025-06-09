@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Nexus Mods</title>
+    <link rel="stylesheet" href="InicioS.css">
+</head>
+<body>
+    <section class="left-panel" aria-labelledby="login-heading" role="region">
+    <h1 id="login-heading">
+        <span style="color: white;">Iniciar sesión en</span><strong> Nexus Mods</strong>
+    </h1>
+
+    <form aria-describedby="form-description" role="form">
+        <p id="form-description" class="p1">
+            Necesitas iniciar sesión antes de continuar.
+        </p>
+
+        <label for="email">Correo electrónico o nombre de usuario <strong>Obligatorio</strong></label>
+<input type="text" id="email" name="email" aria-required="true">
+
+        <label for="password">Contraseña <strong>Obligatorio</strong></label>
+        <input type="text" id="password" name="password" aria-label="Campo para ingresar la contrasña" aria-required="true">
+        <p>
+            <a href="#" id="forgot-pass" aria-label="¿Olvidaste tu contraseña? Recupérala" role="link">¿Olvidaste tu contraseña?</a>
+        </p>
+        <button type="submit" id="loginButton" aria-label="Iniciar sesión en Nexus Mods" role="button">Iniciar sesión</button>
+    </form>
+    
+    <p>¿No tienes cuenta? <a href="#" aria-label="¿No tienes una cuenta? Regístrate aquí" role="link">Regístrate aquí</a></p>
+
+    <footer>
+        <div class="footer-logo" aria-label="Logotipo de Nexus Mods">NEXUS<span>MODS</span></div>
+        <div class="footer-links">
+        <a href="#" aria-label="Consulta los términos de servicio de Nexus Mods">Terms of Service</a> | <a href="#" aria-label="Lee la política de privacidad de Nexus Mods">Privacy Policy</a>
+    </div>
+        <p>&copy; 2025 Black Tree Gaming Ltd.</p>
+        <blockquote>
+        Página basada en NEXUS MODS Desde 0
+        </blockquote>
+    </footer>
+  </section>
+
+    <script>
+        /* obtenemos el action listener de nuestro botón */
+        document.getElementById("loginButton").addEventListener("click", function(event) {
+            /* Evitamos que se envié nuestro botón de formulario */
+            event.preventDefault(); 
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+        /* Si no se ingresa nada a nuestros inputs, entonces evitamos cargar la nueva página */
+        if (email === "" || password === "") {
+            return;
+        }
+        /* Si todo está bien, cargamos la página */
+        window.location.href = "NexusMods.html";
+    });
+    </script>
+</body>
+    
+</html>

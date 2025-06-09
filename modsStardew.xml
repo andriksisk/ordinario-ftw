@@ -1,0 +1,146 @@
+<!-- Datos para el cargado de la tabla  -->
+<modsStardew>
+  <mod>
+    <imagen>imgsModsStardew/1.png</imagen>
+    <descripcionImagen>Imagen representativa del inventario del jugador, donde puede spawnear objetos fácilmente.</descripcionImagen>
+    <nombre>CJB Item Spawner</nombre>
+    <autor>Pathoschild</autor>
+    <categoria>Cheats</categoria>
+    <descripcion>Un menú de generador de objetos en el juego fácil de usar</descripcion>
+    <fecha>15 Mar 2016</fecha>
+    <informacion>154.4 Mil Likes
+        6.4 Millones de descargas
+        73.0 KiloBytes
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/2.png</imagen>
+    <descripcionImagen>Imagen del minimapa que ofrece el mod, donde se muestra las cabezas de los NPC y jugadores</descripcionImagen>
+    <nombre>NPC Map Location</nombre>
+    <autor>Bouhm</autor>
+    <categoria>User Interface</categoria>
+    <descripcion>Ver NPCs y jugadores en el mapa, con un minimapa opcional</descripcion>
+    <fecha>1 Abril 2016</fecha>
+    <informacion>256.7 Mil Likes
+        10.6 Millones de descargas
+        104.0 KiloBites
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/3.png</imagen>
+    <descripcionImagen>Imagen del jugador subido en un tractor, arreando su rancho</descripcionImagen>
+    <nombre>Tractor Mod</nombre>
+    <autor>Pathoschild</autor>
+    <categoria>Gameplay Mechanics</categoria>
+    <descripcion>Compra un tractor para trabajar de manera más eficiente con los cultivos, despejar ramas y piedras, etc.</descripcion>
+    <fecha>18 Agosto 2017</fecha>
+    <informacion>112.6 Mil Likes
+        5.1 Millones de descargas
+        330.0 KiloBites
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/4.png</imagen>
+    <descripcionImagen>Imagen introductoria para exponer el nombre del mod</descripcionImagen>
+    <nombre>PyTK - Platonymous Toolkit</nombre>
+    <autor>Platonymous</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>libreria para Smapi Mods</descripcion>
+    <fecha>29 Diciembre 2017</fecha>
+    <informacion>107.2 Mil Likes
+        4.4 Millones de descargas
+        31.0 KiloBites
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/5.png</imagen>
+    <descripcionImagen>Imagen donde se pone un ejemplo de contenido nuevo, sin reemplazar los archivos existentes</descripcionImagen>
+    <nombre>Content Patcher</nombre>
+    <autor>Pathoschild</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>Carga paquetes de contenido que cambian los datos, imágenes y mapas del juego sin reemplazar los archivos XNB.</descripcion>
+    <fecha>25 Febrero 2018</fecha>
+    <informacion>364.1 Mil Likes
+        18.3 Millones de descargas
+        325.0 KiloBites
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/6.png</imagen>
+    <descripcionImagen>Imagen introductoria para exponer el nombre del mod</descripcionImagen>
+    <nombre>SMAPI - Stardew Modding API</nombre>
+    <autor>Pathoschild</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>Mod Loader para Stardew Valley</descripcion>
+    <fecha>16 Junio 2018</fecha>
+    <informacion>298.6 Mil Likes
+        21.4 Millones de descargas
+        40.0 MegaBytes
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/7.png</imagen>
+    <descripcionImagen>Imagen introductoria para exponer el nombre del mod</descripcionImagen>
+    <nombre>StardewHack</nombre>
+    <autor>bcmpinc</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>Libreria para otros mods de bcmpinc</descripcion>
+    <fecha>04 Enero 2019</fecha>
+    <informacion>79.4 Mil Likes
+        3.6 Millones de descargas
+        33.0 KiloBytes
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/8.png</imagen>
+    <descripcionImagen>Imagen demostrativa de la granja del jugador, donde puede usar cheats</descripcionImagen>
+    <nombre>Farm Type Manager (FTM)</nombre>
+    <autor>EscaMMC</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>El Administrador de Tipo de Granja (FTM) es un marco que permite a otros mods generar objetos y monstruos en cualquier parte del juego, con varios controles y opciones de personalización.</descripcion>
+    <fecha>07 Enero 2019</fecha>
+    <informacion>153.6 Mil Likes
+        7.8 Millones de descargas
+        129.0 KiloBytes
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/9.png</imagen>
+    <descripcionImagen>Imagen introductoria para exponer el nombre del mod, donde se muestra una nueva granja y el título de Stardew Valley Expanded</descripcionImagen>
+    <nombre>Stardew Valley Expanded</nombre>
+    <autor>FlashShifter</autor>
+    <categoria>Expansions</categoria>
+    <descripcion>Stardew Valley Expanded es una expansión hecha por fans para Stardew Valley de ConcernedApe. Este mod añade 28 nuevos NPCs, 58 ubicaciones, 278 eventos de personajes, 43 peces...</descripcion>
+    <fecha>08 Abril 2019</fecha>
+    <informacion>169.3 Mil Likes
+        16.3 Millones de descargas
+        97.5 MegaBytes
+    </informacion>
+  </mod>
+  <mod>
+    <imagen>imgsModsStardew/10.png</imagen>
+    <descripcionImagen>Imagen demostrativa donde se ve una nuevas interfaz de usuario de tiendas para el uso mods.</descripcionImagen>
+    <nombre>Shop Tile Framework</nombre>
+    <autor>CherryChain</autor>
+    <categoria>Modding Tools</categoria>
+    <descripcion>Hagamos que los paquetes de contenido creen tiendas completamente personalizables y tiendas de animales, y que sean interactivas en el juego a través de propiedades de los azulejos.</descripcion>
+    <fecha>31 Diciembre 2019</fecha>
+    <informacion>82.4 Mil Likes
+        3.5 Millones de descargas
+        36.0 KiloBytes
+    </informacion>
+  </mod>
+    <mod>
+      <imagen>imgsModsStardew/11.png</imagen>
+      <descripcionImagen>Imagen demostrativa donde se ve una nuevas interfaz de usuario para la administración de otros mods</descripcionImagen>
+      <nombre>Generic Mod Config Menu</nombre>
+      <autor>spacechase0</autor>
+      <categoria>Modding Tools</categoria>
+      <descripcion>Agrega una interfaz de usuario en el juego para editar las opciones de configuración de otros mods.</descripcion>
+      <fecha>03 Enero 2020</fecha>
+      <informacion>185.5 Mil Likes
+        8.8 Millones de descargas
+        104.00 KiloBytes
+      </informacion>
+    </mod>
+</modsStardew>

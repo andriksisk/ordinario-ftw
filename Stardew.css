@@ -1,0 +1,434 @@
+body {
+    font-family: sans-serif;
+    margin-top: 60px;
+    background-color: #111111;
+    background-repeat: no-repeat; /* Evita que se repita */
+}
+
+    .logo-text {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    }
+
+    .logo-text span {
+    color: #d98f40;
+    }
+
+    .barra-navegacion {
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        background-color: #161616; /* Color de fondo */
+        padding: 1px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0; /* Asegura que inicie desde el extremo izquierdo */
+        width: 100%; /* Extiende la barra completamente */
+        z-index: 99999999999999999;
+        box-sizing: border-box; /* Evita que padding afecte el tamaño */
+    }
+
+    .nav-right{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        align-items: center;
+        gap: 10px; /* Espacio entre los elementos */
+        margin-left: auto;
+    }
+
+
+    .search-box {
+        width: 430px;
+        background-color: #0f0f0f;
+        padding: 8px;
+        color: white;
+        border: 0.5px solid #6d6d6d;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .btn.login {
+        margin-left: 6px;
+        padding: 8px 15px;
+        border: none;
+        border: 0.1em solid #000000;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        border-radius: 8%;
+    }
+
+    .btn.register {
+        margin-left: 16px;
+        padding: 8px 15px;
+        border: 0.1em solid #6d6d6d;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        cursor: pointer;
+        color: #d4d4d8;
+        font-size: 14px;
+        border-radius: 8%;
+    }
+
+    .login {
+        background-color: #d98f40; /* Color para iniciar sesión */
+        color: black;
+    }
+    .login:hover{
+        background-color: #d98f40;
+        transform: scale(1.06);
+    }
+
+    .register {
+        background-color: #0f0f0f; /* Color para registrarse */
+    }
+    .register:hover{
+        background-color: #0f0f0f;
+        transform: scale(1.06);
+    }
+
+    .barra-navegacion ul {
+        list-style: none; /* Quitar los puntos de la lista */
+        padding: 0;
+        display: flex;
+        justify-content: left; /* Centrar los elementos */
+        gap: 20px; /* Espacio entre botones */
+    }
+
+    .barra-navegacion li {
+        display: inline;
+    }
+
+    .barra-navegacion a {
+        color: white;
+        text-decoration: none; /* Quitar subrayado */
+        font-size: 18px;
+        padding: 16px 15px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .barra-navegacion a:hover {
+        background-color: #2c2c2c; /* Color al pasar el mouse */
+    }
+
+    img{
+        display: block;
+        position: relative;
+        filter: brightness(30%);
+        object-fit: cover;
+        top: 50;
+        left: 0;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0)); 
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0));
+    }
+
+    .bkimg{
+        position: fixed;
+    }
+
+    /*  */
+.header-infoMod {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: left;
+    gap: 15px; /* Espacio entre los elementos */
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.header-infoMod h3 {
+    position: relative; /* Mantiene el control de la posición */
+    z-index: 2; /* Lo coloca delante de la imagen */
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.header-infoMod img{
+    filter: none;
+    mask-image: none;
+    width: 80px;
+    top: 10px;
+}
+
+.contenido {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Aside */
+
+aside {
+    font-size: 15px;
+    z-index: 1;
+    color: white;
+    width: 250px;
+    background: #f4f4f400;
+    padding: 30px;
+    
+    border-right: 1px solid #ffffff;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*tabla */
+table {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3d3d3d3d;
+}
+
+table img{
+    filter: none;
+    mask-image: none;
+    opacity: 1;
+    top: -1px;
+    width: 200px;
+}
+
+th, td {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+td img {
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+/* footer */
+
+.ViewMore{
+    margin-top: 70px;
+    margin-bottom: 90px;
+    z-index: 99999999999999;
+    background-color: #0f0f0f;
+    margin-left: 900px;
+    padding: 10px 35px;
+    border: none;
+    border: 0.1em solid #383838;
+    cursor: pointer;
+    color: #d4d4d8;
+    font-size: 16px;
+    border-radius: 8%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}   
+
+.ViewMore:hover{
+    z-index: 9999999999;
+    background-color: #a36519;
+    transform: scale(1.02);
+}
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+  font-family: sans-serif;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.premium-btn {
+    font-size: 16px;
+    background-color: #d98f40;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+.network-stats p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #424242;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-logo span {
+  color: #d98f40;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+}
+
+ a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*  */
+
+@media (max-width: 600px) {
+  .barra-navegacion {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .barra-navegacion ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-right {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn.login,
+  .btn.register {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .contenido {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .ViewMore {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Dispositivos medianos (tablets, entre 601px y 1024px) */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .nav-right {
+    right: 10px;
+  }
+
+  .ViewMore {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Dispositivos grandes (pantallas de escritorio grandes) */
+@media (min-width: 1025px) {
+  .contenido {
+    flex-direction: row;
+  }
+
+  .barra-navegacion ul {
+    flex-direction: row;
+  }
+}
+
+
+/*  */
+
+*:focus-visible {
+    outline: 3px solid #ff9100; /* Resalta con un borde azul */
+    background-color: rgba(245, 76, 46, 0.2); /* Fondo ligeramente resaltado */
+    border-radius: 5px; /* Bordes redondeados para mejor apariencia */
+}
