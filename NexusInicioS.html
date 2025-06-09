@@ -18,7 +18,7 @@
         </p>
 
         <label for="email">Correo electrónico o nombre de usuario <strong>Obligatorio</strong></label>
-<input type="text" id="email" name="email" aria-required="true">
+        <input type="text" id="email" name="email" aria-required="true">
 
         <label for="password">Contraseña <strong>Obligatorio</strong></label>
         <input type="text" id="password" name="password" aria-label="Campo para ingresar la contrasña" aria-required="true">
@@ -38,7 +38,7 @@
     </div>
         <p>&copy; 2025 Black Tree Gaming Ltd.</p>
         <blockquote>
-        Página basada en NEXUS MODS Desde 0
+            Página basada en NEXUS MODS Desde 0
         </blockquote>
     </footer>
   </section>
@@ -46,10 +46,10 @@
     <script>
         /* obtenemos el action listener de nuestro botón */
         document.getElementById("loginButton").addEventListener("click", function(event) {
-            /* Evitamos que se envié nuestro botón de formulario */
-            event.preventDefault(); 
-            let email = document.getElementById("email").value.trim();
-            let password = document.getElementById("password").value.trim();
+        /* Evitamos que se envié nuestro botón de formulario */
+        event.preventDefault(); 
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
         /* Si no se ingresa nada a nuestros inputs, entonces evitamos cargar la nueva página */
         if (email === "" || password === "") {
             return;
